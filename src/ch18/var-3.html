@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>변수와 호이스팅</title>
+</head>
+<body>
+    <script>
+        var x = 10;
+
+        function displayNumber() {
+            console.log("x is " + x);
+            console.log("y is " + y);
+            var y = 20;
+        }
+        displayNumber();
+    </script>
+</body>
+</html>
+
+<!---->
+<!--        호이스팅-->
+<!--    - 변수를 뒤에서 선언하지만, 마치 앞에서 미리 선언한 것처럼 인식함-->
+<!--    - 함수 실행문을 앞에 두고 선언 부분을 뒤에 두더라도 앞으로 끌고올려 인식함-->
+<!---->

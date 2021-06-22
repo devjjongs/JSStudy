@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>var 예약어로 지역 변수 선언하기</title>
+</head>
+<body>
+<script>
+  function addNumber(){
+    var sum = 10 + 20;  //  지역 변수 선언
+    console.log(sum);
+  }
+  addNumber();
+
+  console.log(sum); //  지역 변수를 사용 ==> 지역을 벗어나 사용하여 오류 발생
+</script>
+</body>
+</html>

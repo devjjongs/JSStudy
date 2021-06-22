@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">    <!-- HTML 분석기 -->
+<head>
+    <meta charset="UTF-8">
+    <title>내부 자바스크립트 사용하기</title>
+    <style>     <!--
+    CSS 분석기
+
+    -->
+    body {
+        text-align: center;
+    }
+
+    #heading {
+        color: blue;
+    }
+
+    #text {
+        color: lightgray;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="heading">자바스크립트</h1>
+    <p id="text">위 텍스트를 클릭해 보세요</p>
+
+    <script>        <!-- 자바스크립트 해석기 -->
+    var heading = document.querySelector('#heading');
+    heading.onclick = function () {
+        heading.style.color = "red";
+    }
+    </script>
+</body>
+</html>
+
+
+<!--ⓐ   1행에 있는 <!DOCTYPE html>를 보고 현재 문서가 웹 문서라는 것을 인식-->
+<!--    이제부터 HTML 표준에 맞춰 소스를 읽기 시작-->
+
+<!--ⓑ   웹 문서에서 HTML 태그의 순서와 포함 관계 확인-->
+
+<!--ⓒ   태그 분석이 끝나면 7 ~ 14행의 스타일 정보 분석-->
+
+<!--ⓓ   20행의 <script>태그를 만나면 자바스크립트 해석기에게 스크립트 소스 넘김-->
+<!--    자바스크립트 해석기에서 <script>와 </script> 사이의 소스를 분석하고 해석-->
+
+<!--ⓔ   ⓑ에서 분석한 HTML과 ⓒ에서 분석한 CSS 정보에 따라 웹 브라우저 화면에 표시-->
+
+<!--ⓕ   웹 브라우저에서 사용자가 동작하면 자바스크립트를 실행해서 결과를 화면에 표시-->
