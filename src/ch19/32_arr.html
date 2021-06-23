@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for Each 메소드 활용 1</title>
+    <!-- for Each 메소드 : 배열을 반복하며 저장된 데이터를 조회 -->
+</head>
+<body>
+    <script>
+        var kdata = ['서울', '부산', '청주', '대구'];
+        function printArr(item, index){
+            document.write("배열 데이터 [ " + index + " ] : " + item + "<br>");
+        }
+        kdata.forEach(printArr);
+    </script>
+</body>
+</html>
