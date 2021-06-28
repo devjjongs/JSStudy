@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>기본 함수와 무명 함수 호출 우선순위 살펴보기</title>
+</head>
+<body>
+    <script>
+        var printMsg = function (msg) {     //  무명 함수 선언
+            document.write("무명 함수 : " + msg + "<br>");
+        }
+
+        function printMsg(msg) {            //  기본 함수 선언
+            document.write("기본 함수 : " + msg + "<br>");
+        }
+
+        printMsg("호출되었습니다.");           //  함수 호출
+        // 무명 함수의 호출 우선순위가 더 높음
+    </script>
+</body>
+</html>

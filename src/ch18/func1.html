@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>익명 함수 실행하기</title>
+</head>
+<body>
+    <ul>
+        <h2>익명 함수</h2>
+        <li>함수 이름이 없는 함수</li>
+        <li>함수 자체가 식이므로 함수를 변수에 할당할 수도 있고<br> 다른 함수의 매개변수로 사용할 수도 있음</li>
+    </ul>
+    <script>
+        var sum = function (a, b) {
+            return a + b;
+        }
+        document.write("함수 실행 결과: " + sum(10, 20));
+    </script>
+</body>
+</html>

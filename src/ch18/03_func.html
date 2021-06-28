@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>무명 함수 호출하기</title>
+</head>
+<body>
+    <h2>함수 선언 - 함수 표현식으로 작성하는 방법 (무명 함수)</h2>
+    var 변수명 = function(매개 변수1, 매개 변수2, ... ) {&nbsp&nbsp//&nbsp함수선언
+    <br>&nbsp&nbsp&nbsp&nbsp&nbsp실행문장
+    <br>}
+    <br>변수명(인자1, 인자2, ...);&nbsp&nbsp//&nbsp함수 호출
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        var text1 = "함수 선언 전 호출 에러";
+        var text2 = "한수 선언 후 호출만 가능";
+        // printMsg(text1);                 //  함수 선언 전 호출 에러
+        var printMsg = function(msg) {      //  함수 객체 선언
+            document.write("한수 호출 메시지 : " + msg + "<br>");
+        }
+        printMsg(text2);                    //  함수 선언 후 호출 가능
+    </script>
+</body>
+</html>

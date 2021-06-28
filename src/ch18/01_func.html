@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>기본 함수 호출하기</title>
+</head>
+<body>
+    <p><h2>함수 선언 = 일반적인 방법(기본 함수)</h2></p>
+    <p>function 함수명(매개 변수1, 매개변수2, ...) {&nbsp&nbsp&nbsp>>&nbsp&nbsp&nbsp함수 선언
+        <br>실행 문장;
+        <br>}
+        <br>함수명(인자 1, 인자2, ...);&nbsp&nbsp&nbsp>>&nbsp&nbsp&nbsp함수 호출
+    </p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <script>
+        var text1="함수 선언 전 호출";
+        var text2="힘수 선언 후 호출";
+        printMsg(text1);            //  함수 선언 전 호출
+        function printMsg(msg){     //  함수 선언
+            document.write("함수 호출 메시지 : " + msg + "<br>");
+        }
+        printMsg(text2);            //  함수 선언 후 호출
+    </script>
+</body>
+</html>
